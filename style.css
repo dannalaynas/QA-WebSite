@@ -5,6 +5,7 @@ body
 
 #vName {
 	float:right;
+	color: white;
 }
 
 h1	{
@@ -14,14 +15,14 @@ text-align:	left;
 p	{
  color:	blue;
  }
- 
+
 .bigpic {
 	clear:left;
 	float:left;
 	box-shadow: 10px 10px 5px #888888;
 	margin-right:20px;
 	}
- 
+
 header {
 	 background-color:#cc0066;
 	 width:500px;
@@ -31,7 +32,7 @@ header {
 	 padding: 10px;
 	 box-shadow: 3px 3px 7px #777;
 	}
- 
+
 header a	{
 	font-family:Geneva, Arial, Helvetica, sans-serif;
 	font-size:18px;
@@ -41,11 +42,9 @@ header a	{
 	text-decoration:none;
 	padding:5px;
 	}
- 
+
 header a:hover {
 	text-decoration:underline;
 	color:yellow;
 	background-color:blue;
 	}
-
-

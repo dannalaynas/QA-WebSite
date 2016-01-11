@@ -41,7 +41,7 @@ function readCookie(name) {
 // Delete the cookie and reload the page to clear it
 function eraseCookie(name) {
 	document.cookie = name+"=;expires='1/1/2000'; path=/"; //setting to past date causes it to expire
-	document.forms['frmLogin'].fname.value=''; location.reload(); // on your web page, delete this line and un-comment the one below
+	document.forms["frmLogin"].fname.value=''; location.reload(); // on your web page, delete this line and un-comment the one below
 	// location.href='page1.html'  // replace this with your default home page, if different than this
 }
 
