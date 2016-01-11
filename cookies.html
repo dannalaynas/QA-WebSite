@@ -87,21 +87,13 @@
 
 <h1>Sign In</h1>
 
-<h3>Open this page in Firefox only - it will not currently work in Chrome *</h3>
-
-<p>Note 1: This page is to demonstrate sample code only.  On your own website, the Login page will be a separate page (linked from all pages only if the user is not logged in).  Once the user is logged in, you would display their name above, and NOT show the login box.  Instead, you would display a link to LogOut next to their name on every page.</p>
-<p>Note 2: The spec states that you need to ask for and display both Name and Email.  This sample script only uses Name - see if you can modify it to also ask for - and validate - an email address.</p>
 <form name="frmLogin">
 	E-mail: <input type="text" name="fname" size="20">
 	<input type="button" Value="Login" onClick="createCookie('myCookie',frmLogin.fname.value)"><br>
 	<input type="button" Value="Debug: Show Cookies" onClick="showCookie()">
 </form>
 
-<dl>
-<dt><strong>* Why does this not work in Chrome?</strong></dt>
-<dd>If you open this file from your local machine - ie: the address bar above begins with <b>file://</b> - Chrome does not recognize local cookies. For this to work in Chrome, you need to upload it to a web server (such as Apache or NGinex) and access it via <b>http://</b></dd>
-<dd>If you upload to your web server, remember also to upload the linked cookies.js file</dd>
-</dl>
+
 
 </body>
 </html>
