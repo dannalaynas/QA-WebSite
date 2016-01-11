@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script type="text/javascript" src="cookies.js"></script>
+    <script>
+	//use this script for stuff related to this page only
+	</script>
+
+	<!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="css/small-business.css" rel="stylesheet">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+
+</head>
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#">
+									<img src="http://techspot.ccsf.edu/images/yuba.png" width="170" height="90" alt="">
+							</a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+							<ul class="nav navbar-nav">
+								<li>
+										<a href="login2.html">Log In</a>
+								</li>
+									<li>
+											<a href="index.html">Home</a>
+									</li>
+									<li>
+											<a href="Opp.html">Opportunity</a>
+									</li>
+									<li>
+											<a href="LD.html">L&D</a>
+									</li>
+									<li>
+											<a href="Topics.html">Topics</a>
+									</li>
+
+									<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="#">Account</a></li>
+					<li><a href="#">Settings</a></li>
+					<li role="separator" class="divider"></li>
+					<li><a href="#">Sign Out</a></li>
+				</ul>
+			</li>
+
+							</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+	</nav>
+
+
+
+
+
+
+
+<span id="vName"><script>readCookie('myCookie')</script></span>
+
+<h1>Sign In</h1>
+
+<h3>Open this page in Firefox only - it will not currently work in Chrome *</h3>
+
+<p>Note 1: This page is to demonstrate sample code only.  On your own website, the Login page will be a separate page (linked from all pages only if the user is not logged in).  Once the user is logged in, you would display their name above, and NOT show the login box.  Instead, you would display a link to LogOut next to their name on every page.</p>
+<p>Note 2: The spec states that you need to ask for and display both Name and Email.  This sample script only uses Name - see if you can modify it to also ask for - and validate - an email address.</p>
+<form name="frmLogin">
+	E-mail: <input type="text" name="fname" size="20">
+	<input type="button" Value="Login" onClick="createCookie('myCookie',frmLogin.fname.value)"><br>
+	<input type="button" Value="Debug: Show Cookies" onClick="showCookie()">
+</form>
+
+<dl>
+<dt><strong>* Why does this not work in Chrome?</strong></dt>
+<dd>If you open this file from your local machine - ie: the address bar above begins with <b>file://</b> - Chrome does not recognize local cookies. For this to work in Chrome, you need to upload it to a web server (such as Apache or NGinex) and access it via <b>http://</b></dd>
+<dd>If you upload to your web server, remember also to upload the linked cookies.js file</dd>
+</dl>
+
+</body>
+</html>
