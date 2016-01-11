@@ -3,7 +3,7 @@ body
 /* background:url('Images/sadpug.jpg') no-repeat center center fixed; */
 }
 
-#vName {
+.eggs {
 	float:right;
 	color: white;
 }
