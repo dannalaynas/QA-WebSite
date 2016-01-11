@@ -28,11 +28,11 @@ function readCookie(name) {
 
 	//determine if visitor is logged in, or not, and display appropriate text
 	if (visitorName.length > 0) {
-		var writeLink = "Welcome " + visitorName + " - <a href=\"javascript:eraseCookie('myCookie')\">Log Out</a>"
+		var writeLink = "Hello " + visitorName + " - <a href=\"javascript:eraseCookie('myCookie')\">Log Out</a>"
 	}
 	else
 	{
-		var writeLink = "Welcome. Please log in." // cookie is empty, so don't add any text to the page
+		var writeLink = "Welcome, Please log in." // cookie is empty, so don't add any text to the page
 	}
 
 	document.write(writeLink);  // this line causes the cookie, plus some text, to be added to the page dynamically
